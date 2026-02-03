@@ -28,7 +28,7 @@ def set_background(image_file):
     )
 
 # Set background
-set_background(r"D:\mlops_task-1\flipkart.png")
+set_background(r"flipkart.png")
 
 # ------------------ Load Model ------------------
 @st.cache_resource
@@ -61,4 +61,5 @@ if st.button("Predict"):
     else:
         prediction = model.predict([user_input])[0]
         st.success(f"🎯 Predicted Category: **{prediction}**")
+
 
