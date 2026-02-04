@@ -35,7 +35,7 @@ def set_background(image_file):
 
 
 # Make sure this file exists in project folder
-set_background("flipkart_image.png")
+set_background("flipkart.png")
 
 
 # ------------------ Load Model ------------------
@@ -169,3 +169,4 @@ if st.button("🔍 Predict"):
         if override:
 
             st.info("ℹ️ Rule-based override applied.")
+
