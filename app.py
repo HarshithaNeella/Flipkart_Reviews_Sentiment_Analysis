@@ -33,7 +33,7 @@ set_background(r"flipkart.png")
 # ------------------ Load Model ------------------
 @st.cache_resource
 def load_model():
-    with open("flipkart_lvsm.pkl", "rb") as file:
+    with open("flipkart_LVSM.pkl", "rb") as file:
         model = pickle.load(file)
     return model
 
@@ -61,5 +61,6 @@ if st.button("Predict"):
     else:
         prediction = model.predict([user_input])[0]
         st.success(f"🎯 Predicted Category: **{prediction}**")
+
 
 
