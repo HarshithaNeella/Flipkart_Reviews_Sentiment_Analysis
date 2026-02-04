@@ -156,17 +156,16 @@ if st.button("🔍 Predict"):
         if prediction == "Positive":
 
             st.success(
-                f"✅ Sentiment: **{prediction}**  \n📊 Confidence: {confidence*100:.1f}%"
+                f"✅ Sentiment: **{prediction}** "
             )
 
         else:
 
             st.error(
-                f"❌ Sentiment: **{prediction}**  \n📊 Confidence: {confidence*100:.1f}%"
+                f"❌ Sentiment: **{prediction}** "
             )
 
 
-        if override:
+        
 
-            st.info("ℹ️ Rule-based override applied.")
 
